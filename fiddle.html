@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's fiddle with some JS</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function()
+        {
+            document.querySelector('#blue').onclick = function(){
+                document.querySelector('#blue').style.color = 'red'
+                document.querySelector('body').style.backgroundColor = 'blue';
+
+            }
+
+            document.querySelector('#red').onclick = function(){
+                document.querySelector('body').style.backgroundColor = 'red';
+
+            }
+
+            document.querySelector('#green').onclick = function(){
+                document.querySelector('body').style.backgroundColor = 'green';
+
+            }
+        })
+    </script>
+</head>
+<body>
+
+    <button id = "blue"> blue </button>
+    <button id = "red"> red </button>
+    <button id ="green"> green</button>
+    
+</body>
+</html>
